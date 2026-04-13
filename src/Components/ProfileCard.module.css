@@ -1,0 +1,236 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  padding: 40px 20px;
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  max-width: 80%;
+  min-height: 420px;
+  background-color: #2a2e2a;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ── LEFT PANEL ── */
+.left {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  border-right: 1px solid #3a3e3a;
+  gap: 12px;
+}
+
+.avatarWrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #3a3e3a;
+}
+
+.initials {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #3a3e3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 500;
+  color: #c8bc9a;
+  letter-spacing: 2px;
+}
+
+.onlineDot {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #4caf50;
+  border: 2px solid #2a2e2a;
+}
+
+.fullName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e8e0cc;
+  margin: 0;
+}
+
+.userId {
+  font-size: 12px;
+  color: #7a8a7a;
+  font-family: monospace;
+  margin: 0;
+}
+
+.genderBadge {
+  font-size: 12px;
+  color: #9aaa9a;
+  border: 1px solid #4a5a4a;
+  border-radius: 999px;
+  padding: 3px 14px;
+  text-transform: lowercase;
+}
+
+.divider {
+  width: 40px;
+  border: none;
+  border-top: 1px solid #3a3e3a;
+  margin: 4px 0;
+}
+
+.countryLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6a7a6a;
+  margin: 0;
+}
+
+.countryValue {
+  font-size: 15px;
+  color: #c0b898;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ── RIGHT PANEL ── */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 36px 40px;
+}
+
+.nameHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.firstName {
+  font-size: 38px;
+  font-weight: 600;
+  color: #e8e0cc;
+  margin: 0;
+}
+
+.lastName {
+  font-size: 38px;
+  font-weight: 400;
+  font-style: italic;
+  color: #9aaa9a;
+  margin: 0 0 0 10px;
+}
+
+.memberSince {
+  font-size: 13px;
+  color: #6a7a6a;
+  font-family: monospace;
+  margin-bottom: 20px;
+}
+
+.ageBadge {
+  background: #e8e0cc;
+  color: #2a2e2a;
+  border-radius: 10px;
+  padding: 10px 18px;
+  text-align: center;
+  min-width: 50px;
+}
+
+.ageNumber {
+  font-size: 28px;
+  font-weight: 600;
+  display: block;
+}
+
+.ageLabel {
+  font-size: 12px;
+  display: block;
+  color: #5a5040;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid #3a3e3a;
+  margin: 16px 0;
+}
+
+.infoTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.infoTable td {
+  padding: 10px 0;
+}
+
+.infoLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6a7a6a;
+  font-family: monospace;
+  width: 160px;
+  padding-top: 14px !important;
+}
+
+.infoValue {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e8e0cc;
+}
+
+.infoValueSmall {
+  font-size: 14px;
+  color: #9aaa9a;
+  margin-left: 10px;
+}
+
+.phoneLink {
+  color: #e8e0cc;
+  text-decoration: none;
+}
+
+.phoneLink:hover {
+  text-decoration: underline;
+}
+
+.expandBtn {
+  margin-top: 8px;
+  background: transparent;
+  border: 1px solid #4a5a4a;
+  color: #9aaa9a;
+  font-size: 12px;
+  padding: 4px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.expandBtn:hover {
+  border-color: #7a9a7a;
+  color: #c8e0c8;
+}
